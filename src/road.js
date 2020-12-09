@@ -1,4 +1,4 @@
-import { buildGraph } from "./graph";
+import { buildGraph } from "./graph.js";
 
 const roads = [
   "Alice's House-Bob's House",

@@ -1,4 +1,4 @@
-import { roadGraph } from "./road";
+import { roadGraph } from "./road.js";
 
 function findRoute(graph, from, to) {
   let work = [{ at: from, route: [] }];

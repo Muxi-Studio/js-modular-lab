@@ -1,4 +1,4 @@
-import { roadGraph } from "./road";
+import { roadGraph } from "./road.js";
 
 function randomPick(array) {
   let choice = Math.floor(Math.random() * array.length);
