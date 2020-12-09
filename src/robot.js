@@ -1,17 +1,5 @@
 import { roadGraph } from "./road";
-
-function findRoute(graph, from, to) {
-  let work = [{ at: from, route: [] }];
-  for (let i = 0; i < work.length; i++) {
-    let { at, route } = work[i];
-    for (let place of graph[at]) {
-      if (place == to) return route.concat(place);
-      if (!work.some((w) => w.at == place)) {
-        work.push({ at: place, route: route.concat(place) });
-      }
-    }
-  }
-}
+import { findRoute } from "./route";
 
 export function goalOrientedRobot({ place, parcels }, route) {
   if (route.length == 0) {
