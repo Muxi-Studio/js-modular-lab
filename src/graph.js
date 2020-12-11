@@ -1,3 +1,9 @@
+import noop from "../node_modules/lodash/noop.js";
+
+let a = noop();
+
+console.log(a);
+
 export function buildGraph(edges) {
   let graph = Object.create(null);
   function addEdge(from, to) {
